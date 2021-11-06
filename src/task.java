@@ -23,8 +23,10 @@ ArrayList<Integer> arr=new ArrayList<Integer>();
         Integer second=arr.get(1);
         for (Integer a:arr) {
            if(a>max){
+               second=max;
                max=a;
-           }else if(max>a){
+
+           }else if(max>a&&a!=max){
                second=max;
             }
         }
